@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Stranger Detection</title>
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+<noscript>
+  <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+<div class="upload-container">
+  <div class="upload-header">
+    <h2>Stranger Detection</h2>
+    <form  action="/logout" method="post" >
+      <input type="submit" value="Logout" id="logout" class="btn btn-default btn-sm" >
+      </input>
+    </form>
+    <form  action="index.html" >
+      <input type="submit" value="Upload" id="main" class="btn btn-default btn-sm" >
+      </input>
+    </form>
+    <form  action="/logout" method="post" >
+      <input type="submit" value="List" id="List" class="btn btn-default btn-sm" >
+      </input>
+    </form>
+
+  </div>
+  <div class="upload-content">
+    <div class="single-upload">
+      <h3>Record video webcam</h3>
+      <form id="singleUploadWebcamForm" name="singleUploadWebcamForm">
+        <button id="camBtn" type="button" class="primary submit-btn">Open Camera</button>
+      </form>
+      <div upload-response>
+        <div id="cam"></div>
+      </div>
+    </div>
+    <div class="single-upload">
+      <h3>Upload Single File</h3>
+      <form id="singleUploadForm" name="singleUploadForm">
+        <input id="singleFileUploadInput" type="file" name="file" class="file-input" required/>
+        <button type="submit" class="primary submit-btn">Submit</button>
+      </form>
+      <div class="upload-response">
+        <div id="singleFileUploadError"></div>
+        <div id="singleFileUploadSuccess"></div>
+      </div>
+    </div>
+    <div class="multiple-upload">
+      <h3>Upload Multiple Files</h3>
+      <form id="multipleUploadForm" name="multipleUploadForm">
+        <input id="multipleFileUploadInput" type="file" name="files" class="file-input" multiple required/>
+        <button type="submit" class="primary submit-btn">Submit</button>
+      </form>
+      <div class="upload-response">
+        <div id="multipleFileUploadError"></div>
+        <div id="multipleFileUploadSuccess"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

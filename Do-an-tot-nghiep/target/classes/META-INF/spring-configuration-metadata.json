@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "file",
+      "type": "com.strangerdetection.property.FileStorageProperties",
+      "sourceType": "com.strangerdetection.property.FileStorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.upload-dir",
+      "type": "java.lang.String",
+      "sourceType": "com.strangerdetection.property.FileStorageProperties"
+    }
+  ],
+  "hints": []
+}
